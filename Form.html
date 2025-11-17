@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Web Development Learning Experience Survey</h1>
+    <p>Help me understand how beginners experience learning HTML, CSS, and JavaScript. Your feedback will help improve resources and make the learning journey easier for others.</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"  placeholder="Enter Name"   required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="4" max="100" placeholder="Age">
+        </fieldset>
+       <fieldset>
+        <legend>How did you start learning web development?</legend>
+        <input type="radio" name="learning_method" id="online_videos">
+        <label for="online_videos">Online videos</label>
+        <input type="radio" name="learning_method" id="online_courses">
+        <label for="online_courses">Online courses</label>
+        <input type="radio" name="learning_method" id="Uni/Col">
+        <label for="Uni/Col">University/College</label>
+        <input type="radio" name="learning_method" id="self_taught">
+        <label for="self_taught">Self-taught</label>
+        <input type="radio" name="learning_method" id="coding_bootcamp">
+        <label for="coding_bootcamp">Coding bootcamp</label>
+        <input type="radio" name="learning_method" id="other">
+        <label for="other">Other</label>
+       </fieldset>
+<fieldset>
+    <legend>Which languages are you currently learning? (Select all that apply)</legend>
+    <input type="checkbox" name="languages" id="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" name="languages" id="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="languages" id="javascript">
+    <label for="javascript">JavaScript</label>
+    <input type="checkbox" name="languages" id="python">
+    <label for="python">Python</label>
+    <input type="checkbox" name="languages" id="other_languages">
+    <label for="other_languages">Other</label>
+</fieldset>
+<fieldset>
+    <legend>How difficult do you find learning web development?</legend>
+    <input type="radio" name="difficulty" id="easy">
+    <label for="easy">Easy</label>
+    <input type="radio" name="difficulty" id="medium">
+    <label for="medium">Medium</label>
+    <input type="radio" name="difficulty" id="hard">
+    <label for="hard">Hard</label>
+</fieldset>
+<fieldset>
+    <legend>Which area is the most challenging for you?</legend>
+    <label for="challenging_area">Please specify:</label>
+  <select name="challenging_area" id="challenging_area">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">JavaScript</option>
+    <option value="debugging">Debugging</option>
+    <option value="other">Other</option>
+  </select>
+</fieldset>
+<fieldset>
+    <legend>Any suggestions to improve your learning journey?</legend>
+    <textarea name="suggestions" id="suggestions" rows="4" cols="50" placeholder="Your suggestions..."></textarea>
+</fieldset>
+        <button type="submit">Submit</button>
+    </form>
